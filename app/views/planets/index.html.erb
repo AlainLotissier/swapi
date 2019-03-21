@@ -1,1 +1,23 @@
-<h1>Planets </h1>
+<h1> <%= @jsonResponse['name'] %> </h1>
+<div>
+  <p>
+    Rotation Period: <%= @jsonResponse["rotation_period"] %><br>
+    Orbital Period: <%= @jsonResponse["orbital_period"] %><br>
+    Diameter: <%= @jsonResponse["diameter"] %><br>
+    Climate: <%= @jsonResponse["climate"] %><br>
+    Gravity: <%= @jsonResponse["gravity"] %><br>
+    Terrain: <%= @jsonResponse["terrain"] %><br>
+    Surface Water: <%= @jsonResponse["surface_water"] %><br>
+    Population: <%= @jsonResponse["population"] %><br>
+    Residents: <br> <% @residents.each do |resident| %>
+                      <%= resident[1] %><br>
+                <% end %>
+    Films: <br> <% @films.each do |film| %>
+                      <%= film[1] %><br>
+                <% end %>
+    Created: <%= @jsonResponse["created"] %><br>
+    Edited: <%= @jsonResponse["edited"] %><br>
+    URL: <%= @jsonResponse["url"] %><br>
+
+  </p>
+</div>

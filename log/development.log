@@ -2754,3 +2754,11 @@ Processing by CharactersController#index as HTML
 Completed 200 OK in 7790ms (Views: 26.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/planets/2" for ::1 at 2019-03-21 16:38:22 -0300
+Processing by PlanetsController#index as HTML
+  Parameters: {"name"=>"2"}
+  Rendering planets/index.html.erb within layouts/application
+  Rendered planets/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5612ms (Views: 49.5ms | ActiveRecord: 0.0ms)
+
+
