@@ -6,9 +6,15 @@
       Director: <%= @jsonResponse["director"] %><br>
       Producer: <%= @jsonResponse["producer"] %><br>
       Release Date: <%= @jsonResponse["release_date"] %><br>
-      Characters: <%= @jsonResponse["characters"] %><br>
-      Planets: <%= @jsonResponse["planets"] %><br>
-      Starships: <%= @jsonResponse["starships"] %><br>
+      Characters: <br> <% @characters.each do |character| %>
+                        <%= link_to character %><br>
+                  <% end %>
+      Planets: <br> <% @planets.each do |planet| %>
+                        <%= planet %><br>
+                  <% end %>
+      Starships: <br> <% @starships.each do |starship| %>
+                        <%= starship %><br>
+                  <% end %>
       Created: <%= @jsonResponse["created"] %><br>
       Edited: <%= @jsonResponse["edited"] %><br>
       URL: <%= @jsonResponse["url"] %><br>
