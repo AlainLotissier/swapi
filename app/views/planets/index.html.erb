@@ -10,10 +10,10 @@
     Surface Water: <%= @jsonResponse["surface_water"] %><br>
     Population: <%= @jsonResponse["population"] %><br>
     Residents: <br> <% @residents.each do |resident| %>
-                      <%= resident[1] %><br>
+                      <%=link_to resident[1], characters_path(:name => resident[0].split('/')[-1]) %><br>
                 <% end %>
     Films: <br> <% @films.each do |film| %>
-                      <%= film[1] %><br>
+                      <%= link_to film[1], movies_path(:id => film[0].split('/')[-1]) %><br>
                 <% end %>
     Created: <%= @jsonResponse["created"] %><br>
     Edited: <%= @jsonResponse["edited"] %><br>

@@ -2794,3 +2794,269 @@ Processing by StarshipsController#index as HTML
 Completed 200 OK in 2707ms (Views: 43.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/movies/1" for ::1 at 2019-03-21 20:15:53 -0300
+Processing by MovieController#show as HTML
+  Parameters: {"id"=>"1"}
+Started GET "/" for ::1 at 2019-03-21 20:16:38 -0300
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 175762ms (Views: 95.8ms | ActiveRecord: 0.0ms)
+
+
+Processing by WelcomeController#index as HTML
+Started GET "/" for ::1 at 2019-03-21 20:18:49 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 1483ms (Views: 107.2ms | ActiveRecord: 0.0ms)
+
+
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 1892ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/1" for ::1 at 2019-03-21 20:34:17 -0300
+Processing by MovieController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 15347ms (Views: 47.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters/1" for ::1 at 2019-03-21 20:35:06 -0300
+Processing by CharactersController#index as HTML
+  Parameters: {"name"=>"1"}
+  Rendering characters/index.html.erb within layouts/application
+  Rendered characters/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 6981ms (Views: 59.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters/1" for ::1 at 2019-03-21 20:44:08 -0300
+Processing by CharactersController#index as HTML
+  Parameters: {"name"=>"1"}
+  Rendering characters/index.html.erb within layouts/application
+  Rendered characters/index.html.erb within layouts/application (404.0ms)
+Completed 500 Internal Server Error in 6428ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `films' for #<#<Class:0x007fac341c0218>:0x007fac2c3a79a8>
+Did you mean?  film
+               @films):
+    10:     Gender: <%= @jsonResponse["gender"] %><br>
+    11:     Homeworld: <%= @homeworld %><br>
+    12:     Films: <br> <% @films.each do |film| %>
+    13:                       <%=link_to film[1], movies_path(:id => films[0].split('/')[-1]) %><br>
+    14:                 <% end %>
+    15:     Starships: <br> <% @starships.each do |starship| %>
+    16:                       <%= starship[1] %><br>
+  
+app/views/characters/index.html.erb:13:in `block in _app_views_characters_index_html_erb__4111176273876847361_70188745474860'
+app/views/characters/index.html.erb:12:in `each'
+app/views/characters/index.html.erb:12:in `_app_views_characters_index_html_erb__4111176273876847361_70188745474860'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.5ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (107.7ms)
+Started GET "/characters/1" for ::1 at 2019-03-21 20:44:26 -0300
+Processing by CharactersController#index as HTML
+  Parameters: {"name"=>"1"}
+  Rendering characters/index.html.erb within layouts/application
+  Rendered characters/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 5610ms (Views: 37.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/2" for ::1 at 2019-03-21 20:44:34 -0300
+Processing by MovieController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 13587ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters/2" for ::1 at 2019-03-21 20:44:52 -0300
+Processing by CharactersController#index as HTML
+  Parameters: {"name"=>"2"}
+  Rendering characters/index.html.erb within layouts/application
+  Rendered characters/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 5055ms (Views: 32.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/6" for ::1 at 2019-03-21 20:44:59 -0300
+Processing by MovieController#show as HTML
+  Parameters: {"id"=>"6"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 29476ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/planets/2" for ::1 at 2019-03-21 20:45:47 -0300
+Processing by PlanetsController#index as HTML
+  Parameters: {"name"=>"2"}
+  Rendering planets/index.html.erb within layouts/application
+  Rendered planets/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 3308ms (Views: 42.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/starships/48" for ::1 at 2019-03-21 20:45:58 -0300
+Processing by StarshipsController#index as HTML
+  Parameters: {"name"=>"48"}
+  Rendering starships/index.html.erb within layouts/application
+  Rendered starships/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3948ms (Views: 54.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/starships/59" for ::1 at 2019-03-21 20:46:41 -0300
+Processing by StarshipsController#index as HTML
+  Parameters: {"name"=>"59"}
+  Rendering starships/index.html.erb within layouts/application
+  Rendered starships/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 3584ms (Views: 40.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/6" for ::1 at 2019-03-21 20:46:46 -0300
+Processing by MovieController#show as HTML
+  Parameters: {"id"=>"6"}
+Started GET "/starships/59" for ::1 at 2019-03-21 20:46:56 -0300
+Processing by StarshipsController#index as HTML
+  Parameters: {"name"=>"59"}
+  Rendering starships/index.html.erb within layouts/application
+  Rendered starships/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3179ms (Views: 27.3ms | ActiveRecord: 0.0ms)
+
+
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 31802ms (Views: 64.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-21 20:49:16 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 1762ms (Views: 65.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/1" for ::1 at 2019-03-21 20:49:29 -0300
+Processing by MovieController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 17611ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters/1" for ::1 at 2019-03-21 20:49:49 -0300
+Processing by CharactersController#index as HTML
+  Parameters: {"name"=>"1"}
+  Rendering characters/index.html.erb within layouts/application
+  Rendered characters/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 4320ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/alainlotissier/Desktop/swapi/app/views/characters/index.html.erb:17: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;                 end 
+                             ^
+/Users/alainlotissier/Desktop/swapi/app/views/characters/index.html.erb:25: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/alainlotissier/Desktop/swapi/app/views/characters/index.html.erb:27: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/characters/index.html.erb:17: syntax error, unexpected keyword_end, expecting ')'
+app/views/characters/index.html.erb:25: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/characters/index.html.erb:27: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (92.6ms)
+Started GET "/characters/1" for ::1 at 2019-03-21 20:50:36 -0300
+Processing by CharactersController#index as HTML
+  Parameters: {"name"=>"1"}
+  Rendering characters/index.html.erb within layouts/application
+  Rendered characters/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 6439ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/alainlotissier/Desktop/swapi/app/views/characters/index.html.erb:17: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;                 end 
+                             ^
+/Users/alainlotissier/Desktop/swapi/app/views/characters/index.html.erb:25: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/alainlotissier/Desktop/swapi/app/views/characters/index.html.erb:27: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/characters/index.html.erb:17: syntax error, unexpected keyword_end, expecting ')'
+app/views/characters/index.html.erb:25: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/characters/index.html.erb:27: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (107.2ms)
+Started GET "/characters/1" for ::1 at 2019-03-21 20:50:48 -0300
+Processing by CharactersController#index as HTML
+  Parameters: {"name"=>"1"}
+  Rendering characters/index.html.erb within layouts/application
+  Rendered characters/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 5961ms (Views: 71.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/starships/12" for ::1 at 2019-03-21 20:50:57 -0300
+Processing by StarshipsController#index as HTML
+  Parameters: {"name"=>"12"}
+  Rendering starships/index.html.erb within layouts/application
+  Rendered starships/index.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 4981ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/alainlotissier/Desktop/swapi/app/views/starships/index.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;                 end 
+                             ^
+/Users/alainlotissier/Desktop/swapi/app/views/starships/index.html.erb:29: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/alainlotissier/Desktop/swapi/app/views/starships/index.html.erb:31: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/starships/index.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+app/views/starships/index.html.erb:29: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/starships/index.html.erb:31: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (93.9ms)
+Started GET "/starships/12" for ::1 at 2019-03-21 20:51:23 -0300
+Processing by StarshipsController#index as HTML
+  Parameters: {"name"=>"12"}
+  Rendering starships/index.html.erb within layouts/application
+  Rendered starships/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 4693ms (Views: 49.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters/9" for ::1 at 2019-03-21 20:51:34 -0300
+Processing by CharactersController#index as HTML
+  Parameters: {"name"=>"9"}
+  Rendering characters/index.html.erb within layouts/application
+  Rendered characters/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 2361ms (Views: 31.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/1" for ::1 at 2019-03-21 20:51:40 -0300
+Processing by MovieController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 20522ms (Views: 55.2ms | ActiveRecord: 0.0ms)
+
+

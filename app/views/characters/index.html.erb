@@ -10,10 +10,10 @@
     Gender: <%= @jsonResponse["gender"] %><br>
     Homeworld: <%= @homeworld %><br>
     Films: <br> <% @films.each do |film| %>
-                      <%= film[1] %><br>
+                      <%=link_to film[1], movies_path(:id => film[0].split('/')[-1]) %><br>
                 <% end %>
     Starships: <br> <% @starships.each do |starship| %>
-                      <%= starship[1] %><br>
+                      <%= link_to starship[1], starships_path(:name => starship[0].split('/')[-1]) %><br>
                 <% end %>
     Created: <%= @jsonResponse["created"] %><br>
     Edited: <%= @jsonResponse["edited"] %><br>

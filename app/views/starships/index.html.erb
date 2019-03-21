@@ -14,10 +14,10 @@
     MGLT: <%= @jsonResponse["MGLT"] %><br>
     Starship class: <%= @jsonResponse["starship_class"] %><br>
     Pilots: <br> <% @pilots.each do |pilot| %>
-                      <%= pilot[1] %><br>
+                      <%= link_to pilot[1], characters_path(:name => pilot[0].split('/')[-1]) %><br>
                 <% end %>
     Films: <br> <% @films.each do |film| %>
-                      <%= film[1] %><br>
+                      <%=link_to film[1], movies_path(:id => film[0].split('/')[-1]) %><br>
                 <% end %>
     Created: <%= @jsonResponse["created"] %><br>
     Edited: <%= @jsonResponse["edited"] %><br>
