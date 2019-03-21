@@ -3,11 +3,12 @@
   <% @results.each do |films|%>
     <div>
       <p>
-        Titulo: <%= films["title"] %><br>
+        Título: <%= films["title"] %><br>
         Año de lanzamiento: <%= films["release_date"] %><br>
         Director: <%= films["director"] %><br>
         Productor(es): <%= films["producer"] %><br>
         Número de episodio: <%= films["episode_id"] %><br>
+        <%= link_to 'Mas información', movie_path(:id => films["episode_id"]) %>
       </p>
     </div>
   <% end %>
