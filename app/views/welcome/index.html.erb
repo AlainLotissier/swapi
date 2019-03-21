@@ -8,7 +8,7 @@
         Director: <%= films["director"] %><br>
         Productor(es): <%= films["producer"] %><br>
         Número de episodio: <%= films["episode_id"] %><br>
-        <%= link_to 'Mas información', movie_path(:id => films["url"].split('/')[-1]) %>
+        <%= link_to 'Mas información', movies_path(:id => films["url"].split('/')[-1]) %>
       </p>
     </div>
   <% end %>

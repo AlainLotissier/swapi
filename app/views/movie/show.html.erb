@@ -7,13 +7,13 @@
       Producer: <%= @jsonResponse["producer"] %><br>
       Release Date: <%= @jsonResponse["release_date"] %><br>
       Characters: <br> <% @characters.each do |character| %>
-                        <%= link_to character %><br>
+                        <%= link_to character, characters_path(:name => character) %><br>
                   <% end %>
       Planets: <br> <% @planets.each do |planet| %>
-                        <%= planet %><br>
+                        <%= link_to planet, planets_path(:name => planet) %><br>
                   <% end %>
       Starships: <br> <% @starships.each do |starship| %>
-                        <%= starship %><br>
+                        <%= link_to starship, starships_path(:name => starship) %><br>
                   <% end %>
       Created: <%= @jsonResponse["created"] %><br>
       Edited: <%= @jsonResponse["edited"] %><br>
