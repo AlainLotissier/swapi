@@ -6,6 +6,6 @@ class MovieController < ApplicationController
     @id = params[:id]
     @response = RestClient.get('https://swapi.co/api/films/' + @id);
     @jsonResponse = JSON.parse(@response.body);
-
+    
   end
 end
