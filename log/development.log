@@ -3060,3 +3060,1354 @@ Processing by MovieController#show as HTML
 Completed 200 OK in 20522ms (Views: 55.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/starships/13" for ::1 at 2019-03-21 21:04:19 -0300
+Processing by StarshipsController#index as HTML
+  Parameters: {"name"=>"13"}
+  Rendering starships/index.html.erb within layouts/application
+  Rendered starships/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 3018ms (Views: 31.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-22 11:13:36 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (10.6ms)
+Completed 500 Internal Server Error in 2329ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"search", :method=>:get} missing required keys: [:search]):
+    1: <%= form_tag(search_path method: :get) do %>
+    2:   Search <%= text_field_tag :search %>
+    3:   <%= submit_tag 'Search' %>
+    4: <% end %>
+  
+app/views/welcome/index.html.erb:1:in `_app_views_welcome_index_html_erb__4268834735076121013_70288459688040'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.5ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (113.9ms)
+Started GET "/" for ::1 at 2019-03-22 11:14:26 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 2517ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"search", :method=>:get} missing required keys: [:search]):
+    1: <%= form_tag(search_path method: :get) do %>
+    2:   Search <%= text_field_tag :search, params[:search] %>
+    3:   <%= submit_tag 'Search' %>
+    4: <% end %>
+  
+app/views/welcome/index.html.erb:1:in `_app_views_welcome_index_html_erb__4268834735076121013_70288507939260'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.7ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (183.7ms)
+Started GET "/" for ::1 at 2019-03-22 11:15:38 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 2704ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"search", :id=>"search-form", :method=>:get} missing required keys: [:search]):
+    1: <%= form_tag(search_path method: :get, id: 'search-form') do %>
+    2:   Search <%= text_field_tag :search, params[:search] %>
+    3:   <%= submit_tag 'Search' %>
+    4: <% end %>
+  
+app/views/welcome/index.html.erb:1:in `_app_views_welcome_index_html_erb__4268834735076121013_70288504478640'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (96.6ms)
+Started GET "/" for ::1 at 2019-03-22 11:17:21 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (216.4ms)
+Completed 500 Internal Server Error in 2272ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `search_tag' for #<#<Class:0x007fdaa052faf8>:0x007fdaa059cc48>
+Did you mean?  search_field_tag
+               search_path
+               search_url):
+    1: <%= form_tag(search_path method: :get, search: search_tag) do %>
+    2:   Search <%= text_field_tag :search_tag, params[:search] %>
+    3:   <%= submit_tag 'Search' %>
+    4: <% end %>
+  
+app/views/welcome/index.html.erb:1:in `_app_views_welcome_index_html_erb__4268834735076121013_70288484920760'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (100.1ms)
+Started GET "/" for ::1 at 2019-03-22 11:18:42 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 4125ms (Views: 510.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search/%3Cinput%20type=%22submit%22%20name=%22commit%22%20value=%22Save%20changes%22%20data-disable-with=%22Save%20changes%22%20%2F%3E?method=get" for ::1 at 2019-03-22 11:18:52 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/search/%3Cinput%20type=%22submit%22%20name=%22commit%22%20value=%22Save%20changes%22%20data-disable-with=%22Save%20changes%22%20%2F%3E"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered collection of /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [6 times] (6.6ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.3ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.7ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (152.4ms)
+Started POST "/search/%3Cinput%20type=%22submit%22%20name=%22commit%22%20value=%22Save%20changes%22%20data-disable-with=%22Save%20changes%22%20%2F%3E?method=get" for ::1 at 2019-03-22 11:19:09 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/search/%3Cinput%20type=%22submit%22%20name=%22commit%22%20value=%22Save%20changes%22%20data-disable-with=%22Save%20changes%22%20%2F%3E"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered collection of /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [6 times] (1.9ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (124.1ms)
+Started GET "/" for ::1 at 2019-03-22 11:20:15 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 21883ms (Views: 131.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search/%3Cinput%20type=%22submit%22%20name=%22commit%22%20value=%22Save%20changes%22%20data-disable-with=%22Save%20changes%22%20%2F%3E?method=get" for ::1 at 2019-03-22 11:20:47 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/search/%3Cinput%20type=%22submit%22%20name=%22commit%22%20value=%22Save%20changes%22%20data-disable-with=%22Save%20changes%22%20%2F%3E"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered collection of /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [6 times] (2.9ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (123.8ms)
+Started POST "/search/%3Cinput%20type=%22submit%22%20name=%22commit%22%20value=%22Save%20changes%22%20data-disable-with=%22Save%20changes%22%20%2F%3E?method=get" for ::1 at 2019-03-22 11:24:03 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/search/%3Cinput%20type=%22submit%22%20name=%22commit%22%20value=%22Save%20changes%22%20data-disable-with=%22Save%20changes%22%20%2F%3E"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered collection of /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [6 times] (2.0ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (128.4ms)
+Started POST "/search/%3Cinput%20type=%22submit%22%20name=%22commit%22%20value=%22Save%20changes%22%20data-disable-with=%22Save%20changes%22%20%2F%3E?method=get" for ::1 at 2019-03-22 11:24:30 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/search/%3Cinput%20type=%22submit%22%20name=%22commit%22%20value=%22Save%20changes%22%20data-disable-with=%22Save%20changes%22%20%2F%3E"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered collection of /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [6 times] (2.9ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (130.6ms)
+Started POST "/search/%3Cinput%20type=%22submit%22%20name=%22commit%22%20value=%22Save%20changes%22%20data-disable-with=%22Save%20changes%22%20%2F%3E?method=get" for ::1 at 2019-03-22 11:26:15 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/search/%3Cinput%20type=%22submit%22%20name=%22commit%22%20value=%22Save%20changes%22%20data-disable-with=%22Save%20changes%22%20%2F%3E"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered collection of /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [6 times] (2.1ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (122.6ms)
+Started POST "/search/%3Cinput%20type=%22submit%22%20name=%22commit%22%20value=%22Save%20changes%22%20data-disable-with=%22Save%20changes%22%20%2F%3E?method=get" for ::1 at 2019-03-22 11:26:32 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/search/%3Cinput%20type=%22submit%22%20name=%22commit%22%20value=%22Save%20changes%22%20data-disable-with=%22Save%20changes%22%20%2F%3E"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered collection of /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [6 times] (2.2ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (138.2ms)
+Started GET "/" for ::1 at 2019-03-22 11:28:24 -0300
+Processing by WelcomeController#index as HTML
+Started GET "/" for ::1 at 2019-03-22 11:28:28 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 24569ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"search"} missing required keys: [:search]):
+    1: <%= form_tag search_path do %>
+    2:   Barra de búsqueda <%= text_field_tag :search %>
+    3:   <%= submit_tag 'Buscar' %>
+    4: <% end %>
+  
+app/views/welcome/index.html.erb:1:in `_app_views_welcome_index_html_erb__4268834735076121013_70288529071400'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.1ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (109.6ms)
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 23884ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"search"} missing required keys: [:search]):
+    1: <%= form_tag search_path do %>
+    2:   Barra de búsqueda <%= text_field_tag :search %>
+    3:   <%= submit_tag 'Buscar' %>
+    4: <% end %>
+  
+app/views/welcome/index.html.erb:1:in `_app_views_welcome_index_html_erb__4268834735076121013_70288529071400'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (96.3ms)
+Started GET "/" for ::1 at 2019-03-22 11:29:35 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 10717ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"search"} missing required keys: [:search]):
+    1: <%= form_tag search_path, search: text_field_tag do %>
+    2:   Barra de búsqueda <%= text_field_tag :search %>
+    3:   <%= submit_tag 'Buscar' %>
+    4: <% end %>
+  
+app/views/welcome/index.html.erb:1:in `_app_views_welcome_index_html_erb__4268834735076121013_70288476036940'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.7ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (107.4ms)
+Started GET "/" for ::1 at 2019-03-22 11:30:45 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 2953ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"search"} missing required keys: [:search]):
+    1: <%= form_tag(search_path, method: :get) do %>
+    2:   Barra de búsqueda <%= text_field_tag :search, params[:search]%>
+    3:   <%= submit_tag 'Buscar', name: nil %>
+    4: <% end %>
+  
+app/views/welcome/index.html.erb:1:in `_app_views_welcome_index_html_erb__4268834735076121013_70288475662600'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.1ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (97.5ms)
+Started GET "/" for ::1 at 2019-03-22 11:32:58 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 2877ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"search"} missing required keys: [:search]):
+    1: <%= form_tag(search_path, method: :get, search: submit_tag) do %>
+    2:   Barra de búsqueda <%= text_field_tag :search, params[:search]%>
+    3:   <%= submit_tag 'Buscar', name: nil %>
+    4: <% end %>
+  
+app/views/welcome/index.html.erb:1:in `_app_views_welcome_index_html_erb__4268834735076121013_70288537050740'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.3ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (98.0ms)
+Started GET "/" for ::1 at 2019-03-22 11:33:18 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 2213ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"search"} missing required keys: [:search]):
+    1: <%= form_tag(search_path, method: :get, search: text_field_tag) do %>
+    2:   Barra de búsqueda <%= text_field_tag :search, params[:search]%>
+    3:   <%= submit_tag 'Buscar', name: nil %>
+    4: <% end %>
+  
+app/views/welcome/index.html.erb:1:in `_app_views_welcome_index_html_erb__4268834735076121013_70288463991020'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (102.7ms)
+Started GET "/" for ::1 at 2019-03-22 11:33:31 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 4668ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"search"} missing required keys: [:search]):
+    1: <%= form_tag(search_path, method: :get, search: :search) do %>
+    2:   Barra de búsqueda <%= text_field_tag :search, params[:search]%>
+    3:   <%= submit_tag 'Buscar', name: nil %>
+    4: <% end %>
+  
+app/views/welcome/index.html.erb:1:in `_app_views_welcome_index_html_erb__4268834735076121013_70288536918720'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (92.7ms)
+Started GET "/" for ::1 at 2019-03-22 11:34:01 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 1498ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"search"} missing required keys: [:search]):
+    1: <%= form_tag(search_path, method: :get, search: submit_tag) do %>
+    2:   Barra de búsqueda <%= text_field_tag :search_tag, params[:search] %>
+    3:   <%= submit_tag 'Buscar' %>
+    4: <% end %>
+  
+app/views/welcome/index.html.erb:1:in `_app_views_welcome_index_html_erb__4268834735076121013_70288509976920'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (96.3ms)
+Started GET "/" for ::1 at 2019-03-22 11:34:12 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 2875ms (Views: 38.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search/%3Cinput%20type=%22submit%22%20name=%22commit%22%20value=%22Save%20changes%22%20data-disable-with=%22Save%20changes%22%20%2F%3E?method=get" for ::1 at 2019-03-22 11:34:20 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/search/%3Cinput%20type=%22submit%22%20name=%22commit%22%20value=%22Save%20changes%22%20data-disable-with=%22Save%20changes%22%20%2F%3E"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered collection of /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [6 times] (2.9ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (131.4ms)
+Started POST "/search/%3Cinput%20type=%22submit%22%20name=%22commit%22%20value=%22Save%20changes%22%20data-disable-with=%22Save%20changes%22%20%2F%3E?method=get" for ::1 at 2019-03-22 11:34:39 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/search/%3Cinput%20type=%22submit%22%20name=%22commit%22%20value=%22Save%20changes%22%20data-disable-with=%22Save%20changes%22%20%2F%3E"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered collection of /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [6 times] (3.9ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (143.6ms)
+Started POST "/search/%3Cinput%20type=%22submit%22%20name=%22commit%22%20value=%22Save%20changes%22%20data-disable-with=%22Save%20changes%22%20%2F%3E?method=get" for ::1 at 2019-03-23 00:31:55 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/search/%3Cinput%20type=%22submit%22%20name=%22commit%22%20value=%22Save%20changes%22%20data-disable-with=%22Save%20changes%22%20%2F%3E"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered collection of /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [6 times] (21.2ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.9ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.8ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (171.2ms)
+Started GET "/movies/1" for ::1 at 2019-03-23 00:32:04 -0300
+Processing by MovieController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 35332ms (Views: 50.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-24 14:02:25 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (7.7ms)
+Completed 500 Internal Server Error in 2223ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"search"} missing required keys: [:search]):
+    1: <%= form_tag(search_path, method: :get, search: search_tag) do %>
+    2:   Barra de búsqueda <%= text_field_tag :search_tag, params[:search] %>
+    3:   <%= submit_tag 'Buscar' %>
+    4: <% end %>
+  
+app/views/welcome/index.html.erb:1:in `_app_views_welcome_index_html_erb__2384104784472707463_70120453126700'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (110.0ms)
+Started GET "/" for ::1 at 2019-03-24 14:02:28 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 1720ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"search"} missing required keys: [:search]):
+    1: <%= form_tag(search_path, method: :get, search: search_tag) do %>
+    2:   Barra de búsqueda <%= text_field_tag :search_tag, params[:search] %>
+    3:   <%= submit_tag 'Buscar' %>
+    4: <% end %>
+  
+app/views/welcome/index.html.erb:1:in `_app_views_welcome_index_html_erb__2384104784472707463_70120426237380'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (95.8ms)
+Started GET "/" for ::1 at 2019-03-24 14:06:07 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 1828ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"search"} missing required keys: [:search]):
+    1: <%= form_tag(search_path, method: 'get', search: search_tag) do %>
+    2:   Barra de búsqueda <%= text_field_tag :search_tag, params[:search] %>
+    3:   <%= submit_tag 'Buscar' %>
+    4: <% end %>
+  
+app/views/welcome/index.html.erb:1:in `_app_views_welcome_index_html_erb__2384104784472707463_70120481197540'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.2ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (106.1ms)
+Started GET "/" for ::1 at 2019-03-24 14:06:17 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 1703ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"search"} missing required keys: [:search]):
+    1: <%= form_tag(search_path, method: 'get') do %>
+    2:   Barra de búsqueda <%= text_field_tag :search_tag, params[:search] %>
+    3:   <%= submit_tag 'Buscar' %>
+    4: <% end %>
+  
+app/views/welcome/index.html.erb:1:in `_app_views_welcome_index_html_erb__2384104784472707463_70120462582040'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (93.0ms)
+Started GET "/" for ::1 at 2019-03-24 14:09:34 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 2007ms (Views: 256.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search_tag=A+New+Hope&commit=Buscar" for ::1 at 2019-03-24 14:09:40 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_tag"=>"A New Hope", "commit"=>"Buscar"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 44ms (Views: 37.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-24 14:18:48 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 1687ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"search"} missing required keys: [:search]):
+    1: <%= form_tag(search_path, method: 'get') do %>
+    2:   Barra de búsqueda <%= text_field_tag :search, params[:search] %>
+    3:   <%= submit_tag 'Buscar' %>
+    4: <% end %>
+  
+app/views/welcome/index.html.erb:1:in `_app_views_welcome_index_html_erb__2384104784472707463_70120466168920'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (94.8ms)
+Started GET "/" for ::1 at 2019-03-24 14:19:01 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 1817ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=hola&commit=Buscar" for ::1 at 2019-03-24 14:19:06 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"hola", "commit"=>"Buscar"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 43ms (Views: 37.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=hola&commit=Buscar" for ::1 at 2019-03-24 14:19:58 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"hola", "commit"=>"Buscar"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 34ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/1" for ::1 at 2019-03-24 14:20:06 -0300
+Processing by MovieController#show as HTML
+  Parameters: {"id"=>"1"}
+Started GET "/" for ::1 at 2019-03-24 14:20:08 -0300
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 19148ms (Views: 75.5ms | ActiveRecord: 0.0ms)
+
+
+Processing by WelcomeController#index as HTML
+Started GET "/search?utf8=%E2%9C%93&search=New+Hope&commit=Buscar" for ::1 at 2019-03-24 14:20:25 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"New Hope", "commit"=>"Buscar"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 83ms (Views: 79.1ms | ActiveRecord: 0.0ms)
+
+
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 1531ms (Views: 50.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=New+Hope&commit=Buscar" for ::1 at 2019-03-24 14:23:39 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"New Hope", "commit"=>"Buscar"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): https://swapi.co/api/films/New Hope):
+  
+app/controllers/search_controller.rb:4:in `index'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (91.7ms)
+Started GET "/" for ::1 at 2019-03-24 14:23:51 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 1756ms (Views: 45.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=NewHope&commit=Buscar" for ::1 at 2019-03-24 14:23:55 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"NewHope", "commit"=>"Buscar"}
+Completed 500 Internal Server Error in 1362ms (ActiveRecord: 0.0ms)
+
+
+  
+RestClient::NotFound (404 Not Found):
+  
+app/controllers/search_controller.rb:4:in `index'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (96.2ms)
+Started GET "/search?utf8=%E2%9C%93&search=A+New+Hope&commit=Buscar" for ::1 at 2019-03-24 14:32:47 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"A New Hope", "commit"=>"Buscar"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 1251ms (Views: 31.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=A+New+Hope&commit=Buscar" for ::1 at 2019-03-24 14:35:13 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"A New Hope", "commit"=>"Buscar"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3772ms (Views: 39.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=A+New+Hope&commit=Buscar" for ::1 at 2019-03-24 14:39:00 -0300
+  
+SyntaxError (/Users/alainlotissier/Desktop/swapi/app/controllers/search_controller.rb:15: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/search_controller.rb:15: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (92.3ms)
+Started GET "/search?utf8=%E2%9C%93&search=A+New+Hope&commit=Buscar" for ::1 at 2019-03-24 14:39:13 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"A New Hope", "commit"=>"Buscar"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 4018ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    1: <h1> This is your Search View </h1>
+    2: <%= @search %>
+    3: <%= @film['title'] %>
+  
+app/views/search/index.html.erb:3:in `_app_views_search_index_html_erb__2747481563482571992_70120480474740'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (94.2ms)
+Started GET "/search?utf8=%E2%9C%93&search=A+New+Hope&commit=Buscar" for ::1 at 2019-03-24 14:39:40 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"A New Hope", "commit"=>"Buscar"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 3715ms (Views: 51.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=A+New+Hope&commit=Buscar" for ::1 at 2019-03-24 14:39:59 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"A New Hope", "commit"=>"Buscar"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 4303ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=A+New+Hope&commit=Buscar" for ::1 at 2019-03-24 14:42:07 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"A New Hope", "commit"=>"Buscar"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 5113ms (Views: 44.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=A+NewHope&commit=Buscar" for ::1 at 2019-03-24 14:46:27 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"A NewHope", "commit"=>"Buscar"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 4306ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    1: <h1> You are search for: <%= @search %> </h1>
+    2: <h2> Here is the info </h2>
+    3: 
+    4: <%= @response['title'] %>
+  
+app/views/search/index.html.erb:4:in `_app_views_search_index_html_erb__2747481563482571992_70120482542640'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (94.6ms)
+Started GET "/search?utf8=%E2%9C%93&search=A+NewHope&commit=Buscar" for ::1 at 2019-03-24 14:47:03 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"A NewHope", "commit"=>"Buscar"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 4167ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=A+NewHope&commit=Buscar" for ::1 at 2019-03-24 14:51:30 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"A NewHope", "commit"=>"Buscar"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 5972ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=A+New+Hope&commit=Buscar" for ::1 at 2019-03-24 14:51:51 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"A New Hope", "commit"=>"Buscar"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 4000ms (Views: 28.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/1" for ::1 at 2019-03-24 14:56:35 -0300
+Processing by MovieController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 19237ms (Views: 32.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters/1" for ::1 at 2019-03-24 14:57:00 -0300
+Processing by CharactersController#index as HTML
+  Parameters: {"name"=>"1"}
+  Rendering characters/index.html.erb within layouts/application
+  Rendered characters/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 6411ms (Views: 175.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=A+New+Hope&commit=Buscar" for ::1 at 2019-03-24 14:57:31 -0300
+  
+SyntaxError (/Users/alainlotissier/Desktop/swapi/app/controllers/search_controller.rb:14: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+        @type 'film';
+               ^):
+  
+app/controllers/search_controller.rb:14: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (104.3ms)
+Started GET "/search?utf8=%E2%9C%93&search=A+New+Hope&commit=Buscar" for ::1 at 2019-03-24 15:38:00 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"A New Hope", "commit"=>"Buscar"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3543ms (Views: 28.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=&commit=Buscar" for ::1 at 2019-03-24 15:40:30 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Buscar"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 3632ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    15:       Director: <%= @jsonResponse["director"] %><br>
+    16:       Producer: <%= @jsonResponse["producer"] %><br>
+    17:       Release Date: <%= @jsonResponse["release_date"] %><br>
+    18:       Characters: <br> <% @characters.each do |character| %>
+    19:                         <%= link_to character[1], characters_path(:name => character[0].split('/')[-1]) %><br>
+    20:                   <% end %>
+    21:       Planets: <br> <% @planets.each do |planet| %>
+  
+app/views/search/index.html.erb:18:in `_app_views_search_index_html_erb__2747481563482571992_70120501144840'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.5ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.1ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (103.0ms)
+Started GET "/search?utf8=%E2%9C%93&search=&commit=Buscar" for ::1 at 2019-03-24 15:41:40 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Buscar"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 3863ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/alainlotissier/Desktop/swapi/app/views/search/index.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...@jsonResponse['characters']each do |character| ;@output_buff...
+...                               ^):
+  
+app/views/search/index.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (91.9ms)
+Started GET "/search?utf8=%E2%9C%93&search=&commit=Buscar" for ::1 at 2019-03-24 15:41:54 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Buscar"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 3652ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    15:       Director: <%= @jsonResponse["director"] %><br>
+    16:       Producer: <%= @jsonResponse["producer"] %><br>
+    17:       Release Date: <%= @jsonResponse["release_date"] %><br>
+    18:       Characters: <br> <% @jsonResponse['characters'].each do |character| %>
+    19:                         <%= link_to character[1], characters_path(:name => character[0].split('/')[-1]) %><br>
+    20:                   <% end %>
+    21:       Planets: <br> <% @planets.each do |planet| %>
+  
+app/views/search/index.html.erb:18:in `_app_views_search_index_html_erb__2747481563482571992_70120480130140'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (90.2ms)
+Started GET "/search?utf8=%E2%9C%93&search=&commit=Buscar" for ::1 at 2019-03-24 15:42:56 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Buscar"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 3318ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    15:       Director: <%= @jsonResponse["director"] %><br>
+    16:       Producer: <%= @jsonResponse["producer"] %><br>
+    17:       Release Date: <%= @jsonResponse["release_date"] %><br>
+    18:       Characters: <br> <% @jsonResponse["characters"].each do |character| %>
+    19:                         <%= link_to character[1], characters_path(:name => character[0].split('/')[-1]) %><br>
+    20:                   <% end %>
+    21:       Planets: <br> <% @planets.each do |planet| %>
+  
+app/views/search/index.html.erb:18:in `_app_views_search_index_html_erb__2747481563482571992_70120482626580'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.9ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (102.9ms)
+Started GET "/search?utf8=%E2%9C%93&search=&commit=Buscar" for ::1 at 2019-03-24 15:43:36 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Buscar"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 3142ms (Views: 29.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=&commit=Buscar" for ::1 at 2019-03-24 15:45:50 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Buscar"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3678ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=A+New+Hope&commit=Buscar" for ::1 at 2019-03-24 15:45:58 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"A New Hope", "commit"=>"Buscar"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 2955ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=A+New+Hope&commit=Buscar" for ::1 at 2019-03-24 15:46:17 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"A New Hope", "commit"=>"Buscar"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 3423ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    18:       Characters: <br> <% @jsonResponse["characters"].each do |character| %>
+    19:                         <%= link_to character[1], characters_path(:name => character[0].split('/')[-1]) %><br>
+    20:                   <% end %>
+    21:       Planets: <br> <% @planets.each do |planet| %>
+    22:                         <%= link_to planet[1], planets_path(:name => planet[0].split('/')[-1]) %><br>
+    23:                   <% end %>
+    24:       Starships: <br> <% @starships.each do |starship| %>
+  
+app/views/search/index.html.erb:21:in `_app_views_search_index_html_erb__2747481563482571992_70120428504140'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (91.4ms)
+Started GET "/search?utf8=%E2%9C%93&search=A+New+Hope&commit=Buscar" for ::1 at 2019-03-24 15:46:47 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"A New Hope", "commit"=>"Buscar"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 3562ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters/h" for ::1 at 2019-03-24 15:47:04 -0300
+Processing by CharactersController#index as HTML
+  Parameters: {"name"=>"h"}
+Completed 500 Internal Server Error in 1549ms (ActiveRecord: 0.0ms)
+
+
+  
+RestClient::NotFound (404 Not Found):
+  
+app/controllers/characters_controller.rb:5:in `index'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (89.6ms)
+Started GET "/search?utf8=%E2%9C%93&search=A+New+Hope&commit=Buscar" for ::1 at 2019-03-24 15:47:13 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"A New Hope", "commit"=>"Buscar"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 3321ms (Views: 41.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=A+New+Hope&commit=Buscar" for ::1 at 2019-03-24 15:48:45 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"A New Hope", "commit"=>"Buscar"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 22427ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=Luke+Skywalker&commit=Buscar" for ::1 at 2019-03-24 15:50:39 -0300
+  
+SyntaxError (/Users/alainlotissier/Desktop/swapi/app/controllers/search_controller.rb:71: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/search_controller.rb:71: syntax error, unexpected keyword_end, expecting end-of-input
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (95.3ms)
+Started GET "/search?utf8=%E2%9C%93&search=Luke+Skywalker&commit=Buscar" for ::1 at 2019-03-24 15:50:49 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Luke Skywalker", "commit"=>"Buscar"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 9881ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/alainlotissier/Desktop/swapi/app/views/search/index.html.erb:34: syntax error, unexpected '<'
+  <h1> <%= @jsonResponse['name'] ;@output_buffer.safe_append=' </h1>
+   ^
+/Users/alainlotissier/Desktop/swapi/app/views/search/index.html.erb:59: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/alainlotissier/Desktop/swapi/app/views/search/index.html.erb:61: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/search/index.html.erb:34: syntax error, unexpected '<'
+app/views/search/index.html.erb:59: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/search/index.html.erb:61: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (13.6ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.8ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (201.2ms)
+Started GET "/search?utf8=%E2%9C%93&search=Luke+Skywalker&commit=Buscar" for ::1 at 2019-03-24 15:51:22 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Luke Skywalker", "commit"=>"Buscar"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 8810ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/alainlotissier/Desktop/swapi/app/views/search/index.html.erb:59: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/alainlotissier/Desktop/swapi/app/views/search/index.html.erb:61: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/search/index.html.erb:59: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/search/index.html.erb:61: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (94.8ms)
+Started GET "/search?utf8=%E2%9C%93&search=Luke+Skywalker&commit=Buscar" for ::1 at 2019-03-24 15:53:11 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Luke Skywalker", "commit"=>"Buscar"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 8334ms (Views: 47.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/2" for ::1 at 2019-03-24 15:53:23 -0300
+Processing by MovieController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 16518ms (Views: 37.2ms | ActiveRecord: 0.0ms)
+
+

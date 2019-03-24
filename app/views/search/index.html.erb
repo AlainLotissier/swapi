@@ -3,6 +3,10 @@
   <%= submit_tag 'Buscar' %>
 <% end %>
 
+<h1> You search for: <%= @search %> </h1>
+<h2> Here is the info </h2>
+
+<%if @type == 'film' %>
 <h1> <%= @jsonResponse["title"] %> </h1>
   <div>
     <p>
@@ -26,3 +30,28 @@
 
     </p>
   </div>
+  <% elsif @type == 'person'%>
+    <h1> <%= @jsonResponse['name'] %> </h1>
+    <div>
+      <p>
+        Height: <%= @jsonResponse["height"] %><br>
+        Mass: <%= @jsonResponse["mass"] %><br>
+        Hair Color: <%= @jsonResponse["hair_color"] %><br>
+        Skin Color: <%= @jsonResponse["skin_color"] %><br>
+        Eye Color: <%= @jsonResponse["eye_color"] %><br>
+        Birth Year: <%= @jsonResponse["birth_year"] %><br>
+        Gender: <%= @jsonResponse["gender"] %><br>
+        Homeworld: <%= @homeworld %><br>
+        Films: <br> <% @films.each do |film| %>
+                          <%=link_to film[1], movies_path(:id => film[0].split('/')[-1]) %><br>
+                    <% end %>
+        Starships: <br> <% @starships.each do |starship| %>
+                          <%= link_to starship[1], starships_path(:name => starship[0].split('/')[-1]) %><br>
+                    <% end %>
+        Created: <%= @jsonResponse["created"] %><br>
+        Edited: <%= @jsonResponse["edited"] %><br>
+        URL: <%= @jsonResponse["url"] %><br>
+
+      </p>
+    </div>
+  <% end %>

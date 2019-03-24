@@ -1,3 +1,8 @@
+<%= form_tag(search_path, method: 'get') do %>
+  Barra de búsqueda <%= text_field_tag :search, params[:search] %>
+  <%= submit_tag 'Buscar' %>
+<% end %>
+
 <h1> <%= @jsonResponse['name'] %> </h1>
 <div>
   <p>

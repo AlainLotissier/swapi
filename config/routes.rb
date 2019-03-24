@@ -5,4 +5,5 @@ Rails.application.routes.draw do
    get 'characters/:name' => 'characters#index', as: 'characters'
    get 'planets/:name' => 'planets#index', as: 'planets'
    get 'starships/:name' => 'starships#index', as: 'starships'
+   get 'search' => 'search#index', as: 'search'
 end
