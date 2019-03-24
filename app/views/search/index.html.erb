@@ -4,7 +4,6 @@
 <% end %>
 
 <h1> You search for: <%= @search %> </h1>
-<h2> Here is the info </h2>
 
 <%if @type == 'film' %>
 <h1> <%= @jsonResponse["title"] %> </h1>
@@ -54,4 +53,58 @@
 
       </p>
     </div>
+  <% elsif @type == 'starship'%>
+    <h1> <%= @jsonResponse['name'] %> </h1>
+    <div>
+      <p>
+        Model: <%= @jsonResponse["model"] %><br>
+        Manufacturer: <%= @jsonResponse["manufacturer"] %><br>
+        Cost In Credits: <%= @jsonResponse["cost_in_credits"] %><br>
+        Length: <%= @jsonResponse["length"] %><br>
+        Max Atmosphering Speed: <%= @jsonResponse["max_atmosphering_speed"] %><br>
+        Crew: <%= @jsonResponse["crew"] %><br>
+        Passengers: <%= @jsonResponse["passengers"] %><br>
+        Cargo Capacity: <%= @jsonResponse["cargo_capacity"] %><br>
+        Consumables: <%= @jsonResponse["consumables"] %><br>
+        HyperDrive Rating: <%= @jsonResponse["hyperdrive_rating"] %><br>
+        MGLT: <%= @jsonResponse["MGLT"] %><br>
+        Starship class: <%= @jsonResponse["starship_class"] %><br>
+        Pilots: <br> <% @pilots.each do |pilot| %>
+                          <%= link_to pilot[1], characters_path(:name => pilot[0].split('/')[-1]) %><br>
+                    <% end %>
+        Films: <br> <% @films.each do |film| %>
+                          <%=link_to film[1], movies_path(:id => film[0].split('/')[-1]) %><br>
+                    <% end %>
+        Created: <%= @jsonResponse["created"] %><br>
+        Edited: <%= @jsonResponse["edited"] %><br>
+        URL: <%= @jsonResponse["url"] %><br>
+
+      </p>
+    </div>
+  <% elsif @type == 'planet' %>
+      <h1> <%= @jsonResponse['name'] %> </h1>
+      <div>
+        <p>
+          Rotation Period: <%= @jsonResponse["rotation_period"] %><br>
+          Orbital Period: <%= @jsonResponse["orbital_period"] %><br>
+          Diameter: <%= @jsonResponse["diameter"] %><br>
+          Climate: <%= @jsonResponse["climate"] %><br>
+          Gravity: <%= @jsonResponse["gravity"] %><br>
+          Terrain: <%= @jsonResponse["terrain"] %><br>
+          Surface Water: <%= @jsonResponse["surface_water"] %><br>
+          Population: <%= @jsonResponse["population"] %><br>
+          Residents: <br> <% @residents.each do |resident| %>
+                            <%=link_to resident[1], characters_path(:name => resident[0].split('/')[-1]) %><br>
+                      <% end %>
+          Films: <br> <% @films.each do |film| %>
+                            <%= link_to film[1], movies_path(:id => film[0].split('/')[-1]) %><br>
+                      <% end %>
+          Created: <%= @jsonResponse["created"] %><br>
+          Edited: <%= @jsonResponse["edited"] %><br>
+          URL: <%= @jsonResponse["url"] %><br>
+
+        </p>
+      </div>
+  <% else %>
+    <h3> Not a valid search, look for typos </h3>
   <% end %>

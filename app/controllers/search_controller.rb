@@ -55,6 +55,17 @@ class SearchController < ApplicationController
       if starship['name'] == @search
         @jsonResponse = starship;
         @type = 'starship';
+
+        @pilots = {};
+        @films = {};
+
+        @jsonResponse['films'].each do |films|
+          @films[films.to_s] = JSON.parse(RestClient.get(films).body)['title']
+        end
+
+        @jsonResponse['pilots'].each do |pilots|
+          @pilots[pilots.to_s] = JSON.parse(RestClient.get(pilots).body)['name']
+        end
       end
     end
 
@@ -62,6 +73,17 @@ class SearchController < ApplicationController
       if planet['name'] == @search
         @jsonResponse = planet;
         @type = 'planet';
+
+        @residents = {};
+        @films = {};
+
+        @jsonResponse['films'].each do |films|
+          @films[films.to_s] = JSON.parse(RestClient.get(films).body)['title']
+        end
+
+        @jsonResponse['residents'].each do |residents|
+          @residents[residents.to_s] = JSON.parse(RestClient.get(residents).body)['name']
+        end
       end
     end
 

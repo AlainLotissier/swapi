@@ -4411,3 +4411,51 @@ Processing by MovieController#show as HTML
 Completed 200 OK in 16518ms (Views: 37.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/search?utf8=%E2%9C%93&search=Executor&commit=Buscar" for ::1 at 2019-03-24 15:55:31 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Executor", "commit"=>"Buscar"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 5783ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=Tatooine&commit=Buscar" for ::1 at 2019-03-24 15:56:46 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Tatooine", "commit"=>"Buscar"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 3976ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=Aldeeran&commit=Buscar" for ::1 at 2019-03-24 15:57:21 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Aldeeran", "commit"=>"Buscar"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 6252ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=Alderaan&commit=Buscar" for ::1 at 2019-03-24 15:57:34 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Alderaan", "commit"=>"Buscar"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 7217ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=Alderaann&commit=Buscar" for ::1 at 2019-03-24 15:58:43 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Alderaann", "commit"=>"Buscar"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 3816ms (Views: 64.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=Alderaann&commit=Buscar" for ::1 at 2019-03-24 15:59:04 -0300
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Alderaann", "commit"=>"Buscar"}
+  Rendering search/index.html.erb within layouts/application
+  Rendered search/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 4381ms (Views: 60.6ms | ActiveRecord: 0.0ms)
+
+
