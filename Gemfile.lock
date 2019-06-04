@@ -58,6 +58,10 @@ GEM
     ffi (1.10.0)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    graphql (1.9.6)
+    graphql-client (0.14.0)
+      activesupport (>= 3.0, < 6.0)
+      graphql (~> 1.6)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     i18n (1.6.0)
@@ -176,6 +180,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
+  graphql-client
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
@@ -192,4 +197,4 @@ DEPENDENCIES
   web-console
 
 BUNDLED WITH
-   1.12.4
+   2.0.1

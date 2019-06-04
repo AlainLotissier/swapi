@@ -2,7 +2,11 @@
   Barra de búsqueda <%= text_field_tag :search, params[:search] %>
   <%= submit_tag 'Buscar' %>
 <% end %>
-
+<div>
+  <p>
+    <%= @results_graph %>
+  </p>
+</div>
 <h1> <%= @jsonResponse["title"] %> </h1>
   <div>
     <p>

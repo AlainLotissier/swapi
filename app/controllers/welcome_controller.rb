@@ -1,8 +1,8 @@
 class WelcomeController < ApplicationController
+  require 'rest-client'
+  include SWAPI
+  include Films
   def index
-    require 'rest-client'
-    @response = RestClient.get('https://swapi.co/api/films');
-    @jsonResponse = JSON.parse(@response.body);
-    @results = @jsonResponse["results"];
+    @results_graph= SWAPI::Client.query(Films::Query).data.all_films.films
   end
 end

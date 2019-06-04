@@ -4,15 +4,15 @@
 <% end %>
 
 <h2>StarWars Movies</h2>
-  <% @results.each do |films|%>
+  <% @results_graph.each do |films|%>
     <div>
       <p>
-        Título: <%= films["title"] %><br>
-        Año de lanzamiento: <%= films["release_date"] %><br>
-        Director: <%= films["director"] %><br>
-        Productor(es): <%= films["producer"] %><br>
-        Número de episodio: <%= films["episode_id"] %><br>
-        <%= link_to 'Más información', movies_path(:id => films["url"].split('/')[-1]) %>
+        Título: <%= films.title %><br>
+        Año de lanzamiento: <%= films.release_date %><br>
+        Director: <%= films.director %><br>
+        Productor(es): <% films.producers.each do |producers| %> <%= producers + '.' %>  <% end %><br>
+        Número de episodio: <%= films.episode_id %><br>
+        <%= link_to 'Más información', movies_path(:id => films.id) %>
       </p>
     </div>
   <% end %>

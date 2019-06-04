@@ -1,5 +1,6 @@
 class SearchController < ApplicationController
   def index
+
     @search = params[:search]
     @all_films = JSON.parse(RestClient.get('https://swapi.co/api/films/').body);
     @all_people = JSON.parse(RestClient.get('https://swapi.co/api/people/').body);
