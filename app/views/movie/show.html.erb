@@ -2,31 +2,25 @@
   Barra de búsqueda <%= text_field_tag :search, params[:search] %>
   <%= submit_tag 'Buscar' %>
 <% end %>
-<div>
-  <p>
-    <%= @results_graph %>
-  </p>
-</div>
-<h1> <%= @jsonResponse["title"] %> </h1>
+
+<h1> <%= @results_graph.title %> </h1>
   <div>
     <p>
-      Episode Id: <%= @jsonResponse["episode_id"] %><br>
-      Opening Crawl: <%= @jsonResponse["opening_crawl"] %><br>
-      Director: <%= @jsonResponse["director"] %><br>
-      Producer: <%= @jsonResponse["producer"] %><br>
-      Release Date: <%= @jsonResponse["release_date"] %><br>
-      Characters: <br> <% @characters.each do |character| %>
-                        <%= link_to character[1], characters_path(:name => character[0].split('/')[-1]) %><br>
+      Episode Id: <%= @results_graph.episode_id %><br>
+      Opening Crawl: <%= @results_graph.opening_crawl %><br>
+      Director: <%= @results_graph.director %><br>
+      Producer: <% @results_graph.producers.each do |producers| %> <%= producers + '.' %>  <% end %><br>
+      Release Date: <%= @results_graph.release_date %><br>
+      Characters: <br> <% @results_graph.character_connection.characters.each do |character| %>
+                        <%= link_to character.name, characters_path(:id => character.id) %><br>
                   <% end %>
-      Planets: <br> <% @planets.each do |planet| %>
-                        <%= link_to planet[1], planets_path(:name => planet[0].split('/')[-1]) %><br>
+      Planets: <br> <% @results_graph.planet_connection.planets.each do |planet| %>
+                        <%= link_to planet.name, planets_path(:id => planet.id) %><br>
                   <% end %>
-      Starships: <br> <% @starships.each do |starship| %>
-                        <%= link_to starship[1], starships_path(:name => starship[0].split('/')[-1]) %><br>
+      Starships: <br> <% @results_graph.starship_connection.starships.each do |starship| %>
+                        <%= link_to starship.name, starships_path(:id => starship.id) %><br>
                   <% end %>
-      Created: <%= @jsonResponse["created"] %><br>
-      Edited: <%= @jsonResponse["edited"] %><br>
-      URL: <%= @jsonResponse["url"] %><br>
-
+      Created: <%= @results_graph.created %><br>
+      Edited: <%= @results_graph.edited %><br>
     </p>
   </div>

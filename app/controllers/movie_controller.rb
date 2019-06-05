@@ -3,6 +3,6 @@ class MovieController < ApplicationController
   def index
   end
   def show
-    @results_graph= SWAPI::Client.query(Film::Query, variables: {id: params[:id]})
+    @results_graph= SWAPI::Client.query(Film::Query, variables: {id: params[:id]}).data.film
   end
 end

@@ -1,7 +1,7 @@
 module Film
   include SWAPI
   Query = SWAPI::Client.parse <<-'GRAPHQL'
-    query($id: Id){
+    query($id: ID){
       film(id: $id){
         title
         episodeID
@@ -12,18 +12,23 @@ module Film
         characterConnection{
           characters{
             name
+            id
           }
         }
         planetConnection{
           planets{
             name
+            id
           }
         }
         starshipConnection{
           starships{
             name
+            id
           }
         }
+        created
+        edited 
       }
     }
   GRAPHQL
