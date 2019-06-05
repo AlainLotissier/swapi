@@ -5986,3 +5986,152 @@ Processing by CharactersController#index as HTML
 Completed 200 OK in 1656ms (Views: 56.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/starships/c3RhcnNoaXBzOjEy" for ::1 at 2019-06-05 11:47:22 -0400
+Processing by StarshipsController#index as HTML
+  Parameters: {"id"=>"c3RhcnNoaXBzOjEy"}
+Completed 500 Internal Server Error in 1847ms (ActiveRecord: 0.0ms)
+
+
+  
+LoadError (Unable to autoload constant Starship, expected /Users/alainlotissier/Desktop/swapi/lib/starship.rb to define it):
+  
+app/controllers/starships_controller.rb:4:in `index'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.4ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (88.3ms)
+Started GET "/starships/c3RhcnNoaXBzOjEy" for ::1 at 2019-06-05 11:47:42 -0400
+Processing by StarshipsController#index as HTML
+  Parameters: {"id"=>"c3RhcnNoaXBzOjEy"}
+  Rendering starships/index.html.erb within layouts/application
+  Rendered starships/index.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 2114ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    3:   <%= submit_tag 'Buscar' %>
+    4: <% end %>
+    5: 
+    6: <h1> <%= @jsonResponse['name'] %> </h1>
+    7: <div>
+    8:   <p>
+    9:     Model: <%= @results_graphql.model %><br>
+  
+app/views/starships/index.html.erb:6:in `_app_views_starships_index_html_erb__2561598608336992012_70180460205280'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (90.1ms)
+Started GET "/starships/c3RhcnNoaXBzOjEy" for ::1 at 2019-06-05 11:48:15 -0400
+Processing by StarshipsController#index as HTML
+  Parameters: {"id"=>"c3RhcnNoaXBzOjEy"}
+  Rendering starships/index.html.erb within layouts/application
+  Rendered starships/index.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 588ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined field `manufacturer' on Starship type. https://git.io/v1y3m):
+     7: <div>
+     8:   <p>
+     9:     Model: <%= @results_graph.model %><br>
+    10:     Manufacturer: <%= @results_graph.manufacturer %><br>
+    11:     Cost In Credits: <%= @results_graph.cost_in_credits %><br>
+    12:     Length: <%= @results_graph.length %><br>
+    13:     Max Atmosphering Speed: <%= @results_graph.max_atmosphering_speed %><br>
+  
+app/views/starships/index.html.erb:10:in `_app_views_starships_index_html_erb__2561598608336992012_70180464247180'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (126.1ms)
+Started GET "/starships/c3RhcnNoaXBzOjEy" for ::1 at 2019-06-05 11:48:22 -0400
+Processing by StarshipsController#index as HTML
+  Parameters: {"id"=>"c3RhcnNoaXBzOjEy"}
+  Rendering starships/index.html.erb within layouts/application
+  Rendered starships/index.html.erb within layouts/application (6.1ms)
+Completed 500 Internal Server Error in 562ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `MGLT' for #<#<Class:0x007fa85810d5d0>:0x007fa8587c2650>
+Did you mean?  mglt
+               mglt?):
+    16:     Cargo Capacity: <%= @results_graph.cargo_capacity %><br>
+    17:     Consumables: <%= @results_graph.consumables %><br>
+    18:     HyperDrive Rating: <%= @results_graph.hyperdrive_rating %><br>
+    19:     MGLT: <%= @results_graph.MGLT %><br>
+    20:     Starship class: <%= @results_graph.starship_class %><br>
+    21: 
+    22: 
+  
+app/views/starships/index.html.erb:19:in `_app_views_starships_index_html_erb__2561598608336992012_70180507879860'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (91.8ms)
+Started GET "/starships/c3RhcnNoaXBzOjEy" for ::1 at 2019-06-05 11:48:36 -0400
+Processing by StarshipsController#index as HTML
+  Parameters: {"id"=>"c3RhcnNoaXBzOjEy"}
+  Rendering starships/index.html.erb within layouts/application
+  Rendered starships/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 771ms (Views: 33.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/starships/c3RhcnNoaXBzOjEy" for ::1 at 2019-06-05 11:48:44 -0400
+Processing by StarshipsController#index as HTML
+  Parameters: {"id"=>"c3RhcnNoaXBzOjEy"}
+  Rendering starships/index.html.erb within layouts/application
+  Rendered starships/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 946ms (Views: 32.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/starships/c3RhcnNoaXBzOjEy" for ::1 at 2019-06-05 11:50:34 -0400
+Processing by StarshipsController#index as HTML
+  Parameters: {"id"=>"c3RhcnNoaXBzOjEy"}
+  Rendering starships/index.html.erb within layouts/application
+  Rendered starships/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 1066ms (Views: 33.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters/cGVvcGxlOjE=" for ::1 at 2019-06-05 11:50:40 -0400
+Processing by CharactersController#index as HTML
+  Parameters: {"id"=>"cGVvcGxlOjE="}
+  Rendering characters/index.html.erb within layouts/application
+  Rendered characters/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 890ms (Views: 32.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/starships/c3RhcnNoaXBzOjEy" for ::1 at 2019-06-05 11:50:42 -0400
+Processing by StarshipsController#index as HTML
+  Parameters: {"id"=>"c3RhcnNoaXBzOjEy"}
+  Rendering starships/index.html.erb within layouts/application
+  Rendered starships/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 789ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/ZmlsbXM6MQ==" for ::1 at 2019-06-05 11:50:43 -0400
+Processing by MovieController#show as HTML
+  Parameters: {"id"=>"ZmlsbXM6MQ=="}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 809ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
