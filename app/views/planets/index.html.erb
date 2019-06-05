@@ -3,26 +3,24 @@
   <%= submit_tag 'Buscar' %>
 <% end %>
 
-<h1> <%= @jsonResponse['name'] %> </h1>
+<h1> <%= @results_graph.name %> </h1>
 <div>
   <p>
-    Rotation Period: <%= @jsonResponse["rotation_period"] %><br>
-    Orbital Period: <%= @jsonResponse["orbital_period"] %><br>
-    Diameter: <%= @jsonResponse["diameter"] %><br>
-    Climate: <%= @jsonResponse["climate"] %><br>
-    Gravity: <%= @jsonResponse["gravity"] %><br>
-    Terrain: <%= @jsonResponse["terrain"] %><br>
-    Surface Water: <%= @jsonResponse["surface_water"] %><br>
-    Population: <%= @jsonResponse["population"] %><br>
-    Residents: <br> <% @residents.each do |resident| %>
-                      <%=link_to resident[1], characters_path(:name => resident[0].split('/')[-1]) %><br>
+    Rotation Period: <%= @results_graph.rotation_period %><br>
+    Orbital Period: <%= @results_graph.orbital_period %><br>
+    Diameter: <%= @results_graph.diameter %><br>
+    Climate: <%= @results_graph.climates[0] %><br>
+    Gravity: <%= @results_graph.gravity %><br>
+    Terrain: <%= @results_graph.terrains[0] %><br>
+    Surface Water: <%= @results_graph.surface_water %><br>
+    Population: <%= @results_graph.population %><br>
+    Residents: <br> <% @results_graph.resident_connection.residents.each do |character| %>
+                      <%= link_to character.name, characters_path(:id => character.id) %><br>
                 <% end %>
-    Films: <br> <% @films.each do |film| %>
-                      <%= link_to film[1], movies_path(:id => film[0].split('/')[-1]) %><br>
+    Films: <br> <% @results_graph.film_connection.films.each do |film| %>
+                      <%= link_to film.title, movies_path(:id => film.id) %><br>
                 <% end %>
-    Created: <%= @jsonResponse["created"] %><br>
-    Edited: <%= @jsonResponse["edited"] %><br>
-    URL: <%= @jsonResponse["url"] %><br>
-
+    Created: <%= @results_graph.created %><br>
+    Edited: <%= @results_graph.edited %><br>
   </p>
 </div>

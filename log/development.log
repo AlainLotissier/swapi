@@ -6135,3 +6135,108 @@ Processing by MovieController#show as HTML
 Completed 200 OK in 809ms (Views: 35.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/planets/cGxhbmV0czox" for ::1 at 2019-06-05 12:10:18 -0400
+Processing by PlanetsController#index as HTML
+  Parameters: {"id"=>"cGxhbmV0czox"}
+  Rendering planets/index.html.erb within layouts/application
+  Rendered planets/index.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 2000ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined field `climate' on Planet type. https://git.io/v1y3m):
+     9:     Rotation Period: <%= @results_graph.rotation_period %><br>
+    10:     Orbital Period: <%= @results_graph.orbital_period %><br>
+    11:     Diameter: <%= @results_graph.diameter %><br>
+    12:     Climate: <%= @results_graph.climate %><br>
+    13:     Gravity: <%= @results_graph.gravity %><br>
+    14:     Terrain: <%= @results_graph.terrain %><br>
+    15:     Surface Water: <%= @results_graph.surface_water %><br>
+  
+app/views/planets/index.html.erb:12:in `_app_views_planets_index_html_erb__1034396661659351884_70180527617500'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (90.7ms)
+Started GET "/planets/cGxhbmV0czox" for ::1 at 2019-06-05 12:10:44 -0400
+Processing by PlanetsController#index as HTML
+  Parameters: {"id"=>"cGxhbmV0czox"}
+  Rendering planets/index.html.erb within layouts/application
+  Rendered planets/index.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 644ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined field `climate' on Planet type. https://git.io/v1y3m):
+     9:     Rotation Period: <%= @results_graph.rotation_period %><br>
+    10:     Orbital Period: <%= @results_graph.orbital_period %><br>
+    11:     Diameter: <%= @results_graph.diameter %><br>
+    12:     Climate: <%= @results_graph.climate %><br>
+    13:     Gravity: <%= @results_graph.gravity %><br>
+    14:     Terrain: <%= @results_graph.terrain %><br>
+    15:     Surface Water: <%= @results_graph.surface_water %><br>
+  
+app/views/planets/index.html.erb:12:in `_app_views_planets_index_html_erb__1034396661659351884_70180468859860'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (91.8ms)
+Started GET "/planets/cGxhbmV0czox" for ::1 at 2019-06-05 12:10:50 -0400
+Processing by PlanetsController#index as HTML
+  Parameters: {"id"=>"cGxhbmV0czox"}
+  Rendering planets/index.html.erb within layouts/application
+  Rendered planets/index.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 532ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined field `terrain' on Planet type. https://git.io/v1y3m):
+    11:     Diameter: <%= @results_graph.diameter %><br>
+    12:     Climate: <%= @results_graph.climates[0] %><br>
+    13:     Gravity: <%= @results_graph.gravity %><br>
+    14:     Terrain: <%= @results_graph.terrain %><br>
+    15:     Surface Water: <%= @results_graph.surface_water %><br>
+    16:     Population: <%= @results_graph.population %><br>
+    17:     Residents: <br> <% @results_graph.resident_connection.residents.each do |character| %>
+  
+app/views/planets/index.html.erb:14:in `_app_views_planets_index_html_erb__1034396661659351884_70180482484380'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (91.5ms)
+Started GET "/planets/cGxhbmV0czox" for ::1 at 2019-06-05 12:10:58 -0400
+Processing by PlanetsController#index as HTML
+  Parameters: {"id"=>"cGxhbmV0czox"}
+  Rendering planets/index.html.erb within layouts/application
+  Rendered planets/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 695ms (Views: 42.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters/cGVvcGxlOjE=" for ::1 at 2019-06-05 12:11:09 -0400
+Processing by CharactersController#index as HTML
+  Parameters: {"id"=>"cGVvcGxlOjE="}
+  Rendering characters/index.html.erb within layouts/application
+  Rendered characters/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 1683ms (Views: 36.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/ZmlsbXM6MQ==" for ::1 at 2019-06-05 12:11:13 -0400
+Processing by MovieController#show as HTML
+  Parameters: {"id"=>"ZmlsbXM6MQ=="}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 812ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
