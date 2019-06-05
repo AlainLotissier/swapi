@@ -5792,3 +5792,197 @@ Processing by MovieController#show as HTML
 Completed 200 OK in 756ms (Views: 35.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/characters/cGVvcGxlOjE=" for ::1 at 2019-06-05 11:37:18 -0400
+Processing by CharactersController#index as HTML
+  Parameters: {"id"=>"cGVvcGxlOjE="}
+  Rendering characters/index.html.erb within layouts/application
+  Rendered characters/index.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 1919ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized class variable @@results_graph in ActionView::CompiledTemplates):
+     7: <div>
+     8:   <p>
+     9:     Height: <%= @results_graph.height %><br>
+    10:     Mass: <%= @@results_graph.mass %><br>
+    11:     Hair Color: <%= @results_graph.hair_color %><br>
+    12:     Skin Color: <%= @results_graph.skin_color %><br>
+    13:     Eye Color: <%= @results_graph.eye_color %><br>
+  
+app/views/characters/index.html.erb:10:in `_app_views_characters_index_html_erb___2816920391521643460_70180461813820'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (95.7ms)
+Started GET "/characters/cGVvcGxlOjE=" for ::1 at 2019-06-05 11:37:27 -0400
+Processing by CharactersController#index as HTML
+  Parameters: {"id"=>"cGVvcGxlOjE="}
+  Rendering characters/index.html.erb within layouts/application
+  Rendered characters/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 711ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters/cGVvcGxlOjE=" for ::1 at 2019-06-05 11:39:31 -0400
+Processing by CharactersController#index as HTML
+  Parameters: {"id"=>"cGVvcGxlOjE="}
+  Rendering characters/index.html.erb within layouts/application
+  Rendered characters/index.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 828ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined field `name' on Film type. https://git.io/v1y3m):
+    15:     Gender: <%= @results_graph.gender %><br>
+    16:     Homeworld: <%= @results_graph.homeworld.name %><br>
+    17:     Films: <br> <% @results_graph.film_connection.films.each do |film| %>
+    18:                       <%= link_to film.name, film_path(:id => film.id) %><br>
+    19:                 <% end %>
+    20:     Starships: <br> <% @results_graph.starship_connection.starships.each do |starship| %>
+    21:                       <%= link_to starship.name, starships_path(:id => starship.id) %><br>
+  
+app/views/characters/index.html.erb:18:in `block in _app_views_characters_index_html_erb___2816920391521643460_70180525854220'
+app/views/characters/index.html.erb:17:in `each'
+app/views/characters/index.html.erb:17:in `_app_views_characters_index_html_erb___2816920391521643460_70180525854220'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (90.1ms)
+Started GET "/characters/cGVvcGxlOjE=" for ::1 at 2019-06-05 11:39:47 -0400
+Processing by CharactersController#index as HTML
+  Parameters: {"id"=>"cGVvcGxlOjE="}
+  Rendering characters/index.html.erb within layouts/application
+  Rendered characters/index.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 810ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (unfetched field `id' on Film type. https://git.io/v1y3U):
+    15:     Gender: <%= @results_graph.gender %><br>
+    16:     Homeworld: <%= @results_graph.homeworld.name %><br>
+    17:     Films: <br> <% @results_graph.film_connection.films.each do |film| %>
+    18:                       <%= link_to film.title, film_path(:id => film.id) %><br>
+    19:                 <% end %>
+    20:     Starships: <br> <% @results_graph.starship_connection.starships.each do |starship| %>
+    21:                       <%= link_to starship.name, starships_path(:id => starship.id) %><br>
+  
+app/views/characters/index.html.erb:18:in `block in _app_views_characters_index_html_erb___2816920391521643460_70180546318160'
+app/views/characters/index.html.erb:17:in `each'
+app/views/characters/index.html.erb:17:in `_app_views_characters_index_html_erb___2816920391521643460_70180546318160'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (91.6ms)
+Started GET "/characters/cGVvcGxlOjE=" for ::1 at 2019-06-05 11:40:12 -0400
+Processing by CharactersController#index as HTML
+  Parameters: {"id"=>"cGVvcGxlOjE="}
+  Rendering characters/index.html.erb within layouts/application
+  Rendered characters/index.html.erb within layouts/application (100.8ms)
+Completed 500 Internal Server Error in 2212ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `film_path' for #<#<Class:0x007fa85a102d40>:0x007fa85a101aa8>):
+    15:     Gender: <%= @results_graph.gender %><br>
+    16:     Homeworld: <%= @results_graph.homeworld.name %><br>
+    17:     Films: <br> <% @results_graph.film_connection.films.each do |film| %>
+    18:                       <%= link_to film.title, film_path(:id => film.id) %><br>
+    19:                 <% end %>
+    20:     Starships: <br> <% @results_graph.starship_connection.starships.each do |starship| %>
+    21:                       <%= link_to starship.name, starships_path(:id => starship.id) %><br>
+  
+app/views/characters/index.html.erb:18:in `block in _app_views_characters_index_html_erb___2816920391521643460_70180521122540'
+app/views/characters/index.html.erb:17:in `each'
+app/views/characters/index.html.erb:17:in `_app_views_characters_index_html_erb___2816920391521643460_70180521122540'
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.9ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/alainlotissier/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (94.5ms)
+Started GET "/characters/cGVvcGxlOjE=" for ::1 at 2019-06-05 11:40:46 -0400
+Processing by CharactersController#index as HTML
+  Parameters: {"id"=>"cGVvcGxlOjE="}
+  Rendering characters/index.html.erb within layouts/application
+  Rendered characters/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 634ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/ZmlsbXM6MQ==" for ::1 at 2019-06-05 11:40:52 -0400
+Processing by MovieController#show as HTML
+  Parameters: {"id"=>"ZmlsbXM6MQ=="}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 638ms (Views: 41.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters/cGVvcGxlOjI=" for ::1 at 2019-06-05 11:40:54 -0400
+Processing by CharactersController#index as HTML
+  Parameters: {"id"=>"cGVvcGxlOjI="}
+  Rendering characters/index.html.erb within layouts/application
+  Rendered characters/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 616ms (Views: 39.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/ZmlsbXM6Mg==" for ::1 at 2019-06-05 11:40:57 -0400
+Processing by MovieController#show as HTML
+  Parameters: {"id"=>"ZmlsbXM6Mg=="}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 618ms (Views: 58.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters/cGVvcGxlOjE=" for ::1 at 2019-06-05 11:41:00 -0400
+Processing by CharactersController#index as HTML
+  Parameters: {"id"=>"cGVvcGxlOjE="}
+  Rendering characters/index.html.erb within layouts/application
+  Rendered characters/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 584ms (Views: 38.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/ZmlsbXM6MQ==" for ::1 at 2019-06-05 11:41:01 -0400
+Processing by MovieController#show as HTML
+  Parameters: {"id"=>"ZmlsbXM6MQ=="}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 723ms (Views: 39.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters/cGVvcGxlOjI=" for ::1 at 2019-06-05 11:41:03 -0400
+Processing by CharactersController#index as HTML
+  Parameters: {"id"=>"cGVvcGxlOjI="}
+  Rendering characters/index.html.erb within layouts/application
+  Rendered characters/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 763ms (Views: 42.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/ZmlsbXM6Mw==" for ::1 at 2019-06-05 11:41:04 -0400
+Processing by MovieController#show as HTML
+  Parameters: {"id"=>"ZmlsbXM6Mw=="}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 611ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters/cGVvcGxlOjE=" for ::1 at 2019-06-05 11:41:09 -0400
+Processing by CharactersController#index as HTML
+  Parameters: {"id"=>"cGVvcGxlOjE="}
+  Rendering characters/index.html.erb within layouts/application
+  Rendered characters/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 1656ms (Views: 56.9ms | ActiveRecord: 0.0ms)
+
+

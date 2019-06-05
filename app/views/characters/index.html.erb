@@ -3,26 +3,24 @@
   <%= submit_tag 'Buscar' %>
 <% end %>
 
-<h1> <%= @jsonResponse['name'] %> </h1>
+<h1> <%= @results_graph.name %> </h1>
 <div>
   <p>
-    Height: <%= @jsonResponse["height"] %><br>
-    Mass: <%= @jsonResponse["mass"] %><br>
-    Hair Color: <%= @jsonResponse["hair_color"] %><br>
-    Skin Color: <%= @jsonResponse["skin_color"] %><br>
-    Eye Color: <%= @jsonResponse["eye_color"] %><br>
-    Birth Year: <%= @jsonResponse["birth_year"] %><br>
-    Gender: <%= @jsonResponse["gender"] %><br>
-    Homeworld: <%= @homeworld %><br>
-    Films: <br> <% @films.each do |film| %>
-                      <%=link_to film[1], movies_path(:id => film[0].split('/')[-1]) %><br>
+    Height: <%= @results_graph.height %><br>
+    Mass: <%= @results_graph.mass %><br>
+    Hair Color: <%= @results_graph.hair_color %><br>
+    Skin Color: <%= @results_graph.skin_color %><br>
+    Eye Color: <%= @results_graph.eye_color %><br>
+    Birth Year: <%= @results_graph.birth_year %><br>
+    Gender: <%= @results_graph.gender %><br>
+    Homeworld: <%= @results_graph.homeworld.name %><br>
+    Films: <br> <% @results_graph.film_connection.films.each do |film| %>
+                      <%= link_to film.title, movies_path(:id => film.id) %><br>
                 <% end %>
-    Starships: <br> <% @starships.each do |starship| %>
-                      <%= link_to starship[1], starships_path(:name => starship[0].split('/')[-1]) %><br>
+    Starships: <br> <% @results_graph.starship_connection.starships.each do |starship| %>
+                      <%= link_to starship.name, starships_path(:id => starship.id) %><br>
                 <% end %>
-    Created: <%= @jsonResponse["created"] %><br>
-    Edited: <%= @jsonResponse["edited"] %><br>
-    URL: <%= @jsonResponse["url"] %><br>
-
+    Created: <%= @results_graph.created %><br>
+    Edited: <%= @results_graph.edited %><br>
   </p>
 </div>
